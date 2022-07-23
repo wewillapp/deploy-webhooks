@@ -1,0 +1,26 @@
+[
+  {
+    "apihost": "https://faas-sgp1-18bc02ac.doserverless.co",
+    "namespace": "fn-f228067c-3d5f-414f-8a4c-283075d4172b",
+    "packageVersions": {},
+    "actionVersions": {
+      "sample/hello": {
+        "digest": "ccd70058205a6dc72e55097673baa7f90c1184b93add61572eac144d0470e412",
+        "version": "0.0.5"
+      }
+    },
+    "webHashes": {}
+  },
+  {
+    "apihost": "https://faas-sgp1-18bc02ac.doserverless.co",
+    "namespace": "fn-577097ea-3421-4338-b932-dbd842b0f02e",
+    "packageVersions": {},
+    "actionVersions": {
+      "linebot/webhook": {
+        "digest": "573cbac83ac74028023a6833d21e400fc616010e338c4bf3c29602f35ebe1480",
+        "version": "0.0.11"
+      }
+    },
+    "webHashes": {}
+  }
+]
