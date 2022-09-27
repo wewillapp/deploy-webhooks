@@ -6,7 +6,7 @@ spec:
   - github:
       branch: main
       deploy_on_push: true
-      repo: izcream/deploy-webhooks
+      repo: wewillapp/deploy-webhooks
     name: deploy-webhooks
     routes:
     - path: /

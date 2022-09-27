@@ -12,8 +12,9 @@ import (
 )
 
 type Request struct {
-	ProjectName string `json:"projectName"`
-	Token       string `json:"token"`
+	ProjectName  string `json:"projectName"`
+	Token        string `json:"token"`
+	ChannelToken string `json:"channelToken"`
 }
 type Response struct {
 	StatusCode int               `json:"statusCode,omitempty"`
@@ -51,7 +52,7 @@ func sendNotifyMessage(request Request) error {
 		strings.NewReader(form.Encode()),
 	)
 	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
-	req.Header.Add("Authorization", "Bearer "+os.Getenv("BOT_TOKEN"))
+	req.Header.Add("Authorization", "Bearer "+request.ChannelToken)
 	c := &http.Client{}
 	resp, err := c.Do(req)
 	if err != nil {
